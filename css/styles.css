@@ -57,9 +57,6 @@ a {
 }
 
 .container {
-  /* width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto; */
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
@@ -68,7 +65,7 @@ a {
 
 /*=============== HEADER =================*/
 
-.header {
+/* .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -160,30 +157,17 @@ a {
 .contacts-item-link:hover,
 .contacts-item-link:focus {
   color: #404bbf;
-}
+} */
 
 /*=========================================*/
 
 /*=============== SECTION1 =================*/
 
 .main-section {
-  /* background-color: #2e2f42;
-  padding-bottom: 188px;
-  padding-top: 188px;
-  max-width: 1440px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/main-section-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-  min-width: 320px;
   background-color: #2e2f42;
   padding-top: 72px;
   padding-bottom: 112px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -196,13 +180,6 @@ a {
 }
 
 .main-title {
-  /* color: #fff;
-  text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
-  margin: 0 auto 48px auto; */
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -245,62 +222,38 @@ a {
 /*=============== ABOUT US =================*/
 
 .about-us-section {
-  /* padding: 120px 0; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
-.about-us-container {
-}
-
 .about-us-list {
-  /* display: flex;
-  gap: 24px; */
   display: flex;
   flex-direction: column;
   gap: 72px;
 }
 
 .about-us-list-item {
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .about-us-icon-div {
   display: none;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
-  margin-bottom: 8px; */
 }
 
 .about-us-subtitle {
-  /* color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.4px;
-  margin-bottom: 8px;
-  padding-left: 0; */
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .about-us-text {
-  /* font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.32px; */
   font-size: 16px;
   font-weight: 500;
+  font-style: normal;
   line-height: 1.5;
-  letter-spacing: 0.02px;
+  letter-spacing: 0.02em;
 }
 
 /*=========================================*/
@@ -309,7 +262,11 @@ a {
 
 .our-team-section {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+.our-team-section > .container {
+  max-width: 296px;
 }
 
 .our-team-title {
@@ -317,19 +274,19 @@ a {
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
 }
 
 .our-team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .our-team-list-item {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -346,8 +303,8 @@ a {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.4px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -356,7 +313,7 @@ a {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
@@ -396,7 +353,7 @@ a {
 /*=========================================*/
 
 /*=============== PORTFOLIO =================*/
-
+/* 
 .portfolio-section {
   padding: 120px 0;
 }
@@ -476,7 +433,7 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-}
+} */
 
 /*=========================================*/
 
@@ -880,6 +837,10 @@ a {
     padding-top: 112px;
   }
 
+  .main-section > .container {
+    padding: 0;
+  }
+
   .main-title {
     color: #fff;
     font-size: 56px;
@@ -903,5 +864,102 @@ a {
   .about-us-subtitle {
     text-align: left;
     padding-left: 0;
+  }
+
+  .our-team-section > .container {
+    max-width: 768px;
+    padding: 0;
+  }
+
+  .our-team-list {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .our-team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 16px;
+  }
+
+  .main-section {
+    background-color: #2e2f42;
+    padding-bottom: 188px;
+    padding-top: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-section-bg.jpg);
+  }
+
+  .main-section > .container {
+    padding: 0;
+  }
+
+  .main-title {
+    margin: 0 auto 48px auto;
+  }
+
+  .about-us-section {
+    padding: 120px 0;
+  }
+
+  .about-us-section > .container {
+    padding: 0;
+  }
+
+  .about-us-list {
+    display: flex;
+    flex-wrap: unset;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .about-us-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .about-us-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .about-us-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .our-team-section {
+    padding: 120px 0;
+  }
+
+  .our-team-section > .container {
+    max-width: 1158px;
+    padding: 0;
+  }
+
+  .our-team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .our-team-list-item {
+    width: calc((100% - 72px) / 4);
   }
 }
