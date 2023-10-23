@@ -39,11 +39,13 @@
             </li>
             <li><a class="nav-list-item" href="">Contacts</a></li>
           </ul>
-          <button type="button" class="close-menu-mob-btn">
-            <svg class="close-menu-mob" width="24" height="24">
-              <use href="./images/icons.svg#icon-close-menu-mob"></use>
-            </svg>
-          </button>
+          <a href="#mob-menu">
+            <button type="button" class="close-menu-mob-btn">
+              <svg class="close-menu-mob" width="24" height="24">
+                <use href="./images/icons.svg#icon-close-menu-mob"></use>
+              </svg>
+            </button>
+          </a>
         </nav>
         <address class="contacts">
           <ul class="contacts-list">
@@ -60,13 +62,15 @@
           </ul>
         </address>
       </div>
-      <div class="mob-menu">
+      <div id="mob-menu" class="mob-menu">
         <div>
-          <button type="button" class="mob-menu-btn">
-            <svg class="mob-menu-btn-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+          <a href="#" class="close-mob-css">
+            <button type="button" class="mob-menu-btn">
+              <svg class="mob-menu-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </a>
           <ul class="mob-nav-list">
             <li>
               <a class="mob-nav-list-item" href="./index.html">Studio</a>
@@ -129,7 +133,9 @@
       <section class="main-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-button" type="button">Order Service</button>
+          <a href="#modal-open" class="modal-btn-css">
+            <button class="order-button" type="button">Order Service</button>
+          </a>
         </div>
       </section>
 
@@ -644,13 +650,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div id="modal-open" class="backdrop">
       <div class="modal">
-        <button type="button" class="modal-btn-close">
-          <svg class="modal-btn-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+        <a href="#">
+          <button type="button" class="modal-btn-close">
+            <svg class="modal-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </a>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">

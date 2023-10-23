@@ -185,6 +185,12 @@ a {
   pointer-events: none;
 }
 
+.mob-menu:target {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .mob-menu-btn {
   display: flex;
   justify-content: center;
@@ -196,6 +202,13 @@ a {
   width: 24px;
   height: 24px;
   margin-bottom: 24px;
+}
+
+.close-mob-css {
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
 }
 
 .mob-menu-btn-icon {
@@ -321,6 +334,13 @@ a {
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
+}
+
+.modal-btn-css {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 169px;
 }
 
 /*=========================================*/
@@ -898,7 +918,7 @@ a {
   fill: #f4f4fd;
 }
 
-.is-open {
+.backdrop:target {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -1264,6 +1284,10 @@ a {
   }
 
   .send-btn {
+    cursor: pointer;
+  }
+
+  .modal-btn-close {
     cursor: pointer;
   }
 }
