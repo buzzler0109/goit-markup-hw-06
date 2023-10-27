@@ -990,7 +990,7 @@ a {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(/images/main-section-bg-tab-2x.jpg);
+        url(../images/main-section-bg-tab-2x.jpg);
     }
   }
 
@@ -1101,6 +1101,10 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
+  p {
+    font-style: normal;
+  }
+
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -1151,7 +1155,7 @@ a {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(/images/main-section-bg-2x.jpg);
+        url(../images/main-section-bg-2x.jpg);
     }
   }
 
